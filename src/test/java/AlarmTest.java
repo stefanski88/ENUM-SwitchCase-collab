@@ -8,7 +8,7 @@ class AlarmTest {
     @Test
     public void thirtyPeopleIsOk(){
         // Given
-        int numberOfPeople = 30;
+        int numberOfPeople = ThreatLevel.YELLOW.getPersonsAllowed();
 
         // When
         String actual = Alarm.getOccupationStatus(numberOfPeople);
